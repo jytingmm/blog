@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JYTingmm</title>
+    <link rel="stylesheet" href="css/HD.css">
+    <link rel="icon" href="星月.png" type="image/png" />
+</head>
+<body>
+<!-- 登录-->
+    <div class="container">
+        <div class="form-box">
+            <div class="login-box">
+                <h1>Login</h1>
+                <input type="text" placeholder="用户名" id="username">
+                <input type="password" placeholder="密码" id="password">
+                <button onclick="login()">进入</button>
+            </div>
+        </div>
+<!-- 欢迎信息和图片 -->
+        <div class="com-box right">
+            <h2>欢迎来到</h2><h3>酱鱼の世界</h3>
+            <img src="可爱.svg" alt="">
+        </div>
+    </div>
+    <script>
+        function login() {
+            // 获取输入的用户名和密码
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+             // 验证
+            if (username && password) {
+                console.log('Logging in with username:', username); 
+                window.location.href = 'Home page.html'; // 尝试跳转到首页
+            } else {
+                alert('请输入用户名和密码'); // 提示用户输入
+            }
+        }
+    </script>
+</body>
+</html>
